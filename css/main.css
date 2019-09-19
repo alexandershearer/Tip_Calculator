@@ -3,7 +3,6 @@ width: 100%;
 height: 100%;
 margin: 0;
 padding: 0;
-
 background: rgb(26,171,255);
 background: linear-gradient(90deg, rgba(26,171,255,1) 18%, rgba(255,255,255,1) 50%, rgba(255,0,0,1) 100%);
 font-family: 'Lora', sans-serif;
@@ -15,8 +14,7 @@ font-family: 'Lora', sans-serif;
     height: 525px;
     width: 360px;
     margin: 100px auto;
-    /* display: flex;
-    justify-content: center; */
+    
     border-radius: 15px 15px 15px 15px;
     box-shadow: 5px 3px 8px 3px rgb(103, 182, 235), -5px -3px 8px 3px rgb(219, 105, 105);
 }
@@ -36,7 +34,7 @@ p {
     padding-left: 20px;
 }
 
-#billAmount {
+#billAmount, #serviceQual, #numPeople {
     margin-left: 20px;
     height: 23px;
     width: 50%;
@@ -46,5 +44,27 @@ p {
 #billAmount:focus {
     border: 3px solid rgba(255, 108, 108, 0.842);
     outline: none;
+
+}
+
+button {
+    display: block;
+    margin: 30px auto;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 170px;
+    height: 45px;
+    font-size: 20px;
+    background-color: lightcoral;
+    color: white;
+}
+
+button:focus{
+    outline: none;
+    border: 3px solid rgba(255, 108, 108, 0.842);
+}
+
+button:hover {
+    background-color: lightblue;
 
 }
