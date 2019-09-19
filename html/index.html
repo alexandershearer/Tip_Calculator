@@ -18,7 +18,7 @@
         <div>
             <form>
                 <p>How much was your bill?</p>
-                <input id="billAmount" type="number" placeholder="Bill Amount">
+                <input id="billAmt" type="text" placeholder="Bill Amount">
 
                 <p>How was your service?</p>
                 <select id="serviceQual">
@@ -36,6 +36,11 @@
 
                 <button type="button" id="calculateTip">Calculate!</button>
             </form>
+        </div>
+
+        <div id="tipAmount" style="display: none">
+            <sup>$</sup><span id="tip">0.00</span>
+            <small>each</small>
         </div>
 
 

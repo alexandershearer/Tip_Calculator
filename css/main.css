@@ -34,14 +34,14 @@ p {
     padding-left: 20px;
 }
 
-#billAmount, #serviceQual, #numPeople {
+#billAmt, #serviceQual, #numPeople {
     margin-left: 20px;
     height: 23px;
     width: 50%;
     padding-left: 5px;
 }
 
-#billAmount:focus {
+#billAmt:focus {
     border: 3px solid rgba(255, 108, 108, 0.842);
     outline: none;
 
@@ -67,4 +67,11 @@ button:focus{
 button:hover {
     background-color: lightblue;
 
+}
+
+#tipAmount {
+    text-align: center;
+    font-size: 28px;
+    color: lightcoral;
+    font-weight: bold;
 }
