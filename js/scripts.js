@@ -37,11 +37,22 @@ function calculateTip() {
 
     tipPerPerson = tipPerPerson.toFixed(2);
 
+    var pricePerMeal = amount / numberOfPeople;
 
-    
+
+
     document.getElementById("tipAmount").style.display = "block";
+    document.getElementById("pricePerMeal").innerText = pricePerMeal;
     document.getElementById("tip").innerText = tipPerPerson;
 
+}
+
+function reset() {
+    document.getElementById("billAmt").value = "";
+    document.getElementById("serviceQual").value = 0;
+    document.getElementById("numPeople").value = "";
+    document.getElementById("tipAmount").style.display = "none";
+    document.getElementById("tip").innerText = "0.00";
 }
 
 
@@ -49,4 +60,8 @@ function calculateTip() {
 
 document.getElementById("calculateTip").onclick = function () {
     calculateTip();
+}
+
+document.getElementById("reset").onclick = function () {
+    reset();
 }
